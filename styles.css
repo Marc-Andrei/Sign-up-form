@@ -1,0 +1,121 @@
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf)
+}
+
+body {
+    display: flex;
+}
+
+.leftSection {
+    display: inline-block;
+    width:33vw;
+    height:100vh;
+    background-image: url(dhehaivan-FXCvslpSeUY-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.logoStripe {
+    color:white;
+    display:flex;
+    justify-content: center;
+    height: 15vh;
+    align-items: center;
+    position: relative;
+    top:20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 10vh;
+    font-family: norse;
+    
+}
+
+.logoStripe img{
+    max-height: 80%;
+}
+
+.rightSection {
+    display: flex;
+    width:67vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    display:block;
+}
+
+fieldset {
+    margin: 0;
+    margin-top: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    justify-content: flex-start;
+    border: none;
+    box-shadow: 0 1px lightgray;
+}
+
+.inp {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    flex-basis: 35%;
+    flex-grow: 0;
+}
+
+label {
+    font-family: norse;
+}
+
+legend {
+    font-weight: 700;
+}
+
+.inp,
+legend,
+p {
+    margin-left: 3rem;
+}
+
+p {
+    margin-right: 6rem;
+    font-weight: 700;
+}
+
+button {
+    margin: 2rem 3rem;
+    background-color: #fbf37c;
+    color: #6b6b6b;
+    border: 1px solid #e0d75b;
+    border-radius: 5px;
+    padding: 0.3rem 1.5rem;
+}
+
+a:visited,
+a {
+    color: #fbf37c;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    outline: none;
+    border-color: lightblue;
+    box-shadow: 1px 1px lightblue;
+    
+}
+
+input:invalid {
+    border-color:red;
+}
+
+.different::after {
+    content: "*Passwords do not match";
+    color: red;
+}
+
+.differentPass {
+    border-color: red;
+}
